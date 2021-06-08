@@ -11,8 +11,31 @@
   </head>
   
   <body>
-    <div id="myContainer"></div>
+    <h1>Snake Game</h1>
+    <div id="game-container"></div>
+    <div class="slide-container">
+      <div>
+        <label for="block-size">Block Size: </label>
+        <input type="range" min="1" max="30", value="20" class="slider" id="block-size">
+      </div>
+      <div>
+        <label for="win-score">Winning Score: </label>
+        <input type="range" min="1" max="50", value="5" class="slider" id="win-score">
+      </div>
+      <div>
+        <label for="snake-speed">Snake Speed: </label>
+        <input type="range" min="1" max="5", value="2" class="slider" id="snake-speed">
+      </div>
+    </div>
+    <hr>
+    <p class="instructions">Move the snake by pressing the <u>Left</u>, <u>Right</u>, <u>Up</u> and <u>Down</u> Keys</p>
+    <p class="instructions">You <b style="color:green;">win</b> when you reach a score of <b id='win-score-text'></b></p>
+    <p class="instructions">You <b style="color:red;">lose</b> when the snake hit the border or itself</p>
+    <div id="footer">Updated on 08/06/2021</div>
     <script src="p5.min.js"></script>
+    <script src="snake.js"></script>
+    <script src="apple.js"></script>
     <script src="sketch.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
