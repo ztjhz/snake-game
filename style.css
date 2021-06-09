@@ -26,15 +26,6 @@ hr {
   margin-top: 20px;
 }
 
-#footer {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  color: grey;
-  font-style: italic;
-  padding: 10px;
-}
-
 .slide-container {
   margin-top: 10px;
   display: flex;
@@ -78,4 +69,26 @@ hr {
   border-radius: 50%;
   background: #04AA6D; /* Green background */
   cursor: pointer; /* Cursor on hover */
+}
+
+.loader {
+  border: 10px solid #e6e6e6; /* Light Grey */
+  border-top: 10px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes spin {
+  0% { 
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% { 
+    transform: translateX(-50%) rotate(360deg);
+  }
 }

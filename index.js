@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('#container').hidden = false;
+    document.querySelector('.loader').remove();
+});
 // update the win_score
 const win_text = document.querySelector('#win-score-text')
 win_text.innerText = win_score;

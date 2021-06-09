@@ -54,6 +54,7 @@ function keyPressed() {
 function mousePressed() {
     if (!isLooping()) {
         snake = new Snake();
+        snake.speed = parseInt(document.querySelector('#snake-speed').value);
         loop();
     }
 }
@@ -83,10 +84,10 @@ function update_score(score) {
 function win() {
     background(0, 255, 0, 50);
     fill(255);
-    textSize(50);
+    textSize(25);
     textFont(font);
     textAlign(CENTER);
-    text('You win', canvasWidth / 2, canvasHeight / 2);
+    text('You win! (click to play again)', canvasWidth / 2, canvasHeight / 2);
     noLoop();
 }
 
@@ -94,9 +95,9 @@ function win() {
 function lose() {
     background(255, 0, 0, 50);
     fill(255);
-    textSize(50);
+    textSize(25);
     textFont(font);
     textAlign(CENTER);
-    text('Game Over!', canvasWidth / 2, canvasHeight / 2);
+    text('Game Over! (click to play again)', canvasWidth / 2, canvasHeight / 2);
     noLoop();
 }
