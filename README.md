@@ -5,7 +5,7 @@
 
 [Live website](https://ztjhz.github.io/snake-game/)
 
-<img src="snakegame.gif" alt="demo" width=400/>
+<a href="https://ztjhz.github.io/snake-game/" target="_blank" alt="demo site"><img src="snakegame.gif" alt="demo" width=400/></a>
 
 ---
 ##### Instructions
